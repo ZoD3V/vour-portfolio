@@ -53,16 +53,7 @@ export const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
+  
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
@@ -181,8 +172,17 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                <Image src="/confetti.gif" alt="confetti" width={200} height={200}/>
-                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
+                {/* <Image src="/confetti.gif" alt="confetti" width={200} height={200}/> */}
+                <Lottie
+                  animationData={animationData}
+                  loop={copied}
+                  autoPlay={copied}
+                  rendererSettings={{
+                    preserveAspectRatio: "xMidYMid slice",
+                  }}
+                  height={200}
+                  width={400}
+                />
               </div>
 
               <MagicButton
