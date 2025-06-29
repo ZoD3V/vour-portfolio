@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Spotlight } from "./ui/spotlight-new";
+// import { Spotlight } from "./ui/spotlight-new";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/magic-button";
 import { FaLocationArrow } from "react-icons/fa";
@@ -7,17 +7,17 @@ import { FaLocationArrow } from "react-icons/fa";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
-      <div>
+      {/* <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
         />
-        {/* <Spotlight
+        <Spotlight
           className="top-10 left-full h-[80vh] w-[50vw]"
           fill="purple"
-        /> */}
+        />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-      </div>
+      </div> */}
 
       <div className="flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
         <div
